@@ -18,7 +18,7 @@ pipeline {
                 # TODO fill out the path to conda here
                 python3 -m venv mlip
                 source mlip/bin/activate
-
+                python3 -m pip install --upgrade pip -r requirements.txt 
                 pytest
                 #echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
